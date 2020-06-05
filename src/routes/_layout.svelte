@@ -5,6 +5,13 @@
 </script>
 
 <style>
+	.blog {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 50rem;
+		padding: 2.625rem 1.3125rem;
+	}
+
 	main {
 		position: relative;
 		max-width: 56em;
@@ -15,8 +22,10 @@
 	}
 </style>
 
-<Nav {segment}></Nav>
+<div class="blog">
+	<Nav {segment}></Nav>
 
-<main>
-	<slot></slot>
-</main>
+	<main>
+		<slot></slot>
+	</main>
+</div>
