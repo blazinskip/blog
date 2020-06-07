@@ -1,10 +1,6 @@
-<script>
-  // import the list of posts
-  import {posts} from '../posts'
-</script>
-
 <style>
-  h1, p {
+  h1,
+  p {
     text-align: center;
     margin: 0 auto;
   }
@@ -27,6 +23,11 @@
   }
 </style>
 
+<script>
+  // import the list of posts
+  import { posts } from '../posts';
+</script>
+
 <svelte:head>
   <title>Sapper project template</title>
 </svelte:head>
@@ -36,7 +37,7 @@
 {#each posts as post}
   <article>
     <!-- link article to /posts/$permalink -->
-    <a href={`/posts/${post.permalink}`}>
+    <a href="{`/posts/${post.permalink}`}">
       <h2>{post.title}</h2>
       <p>{post.summary}</p>
     </a>

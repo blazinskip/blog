@@ -1,0 +1,5 @@
+__sapper__/
+posts/
+static/
+cypress/
+node_modules/

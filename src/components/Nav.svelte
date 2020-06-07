@@ -1,7 +1,3 @@
-<script>
-  export let segment;
-</script>
-
 <style>
   .header {
     align-items: center;
@@ -53,7 +49,7 @@
     height: 100%;
 
     transition: opacity 0.3s, border-bottom-color 0.3s;
-    opacity:  0.8;
+    opacity: 0.8;
 
     font-size: 1.2rem;
     font-weight: 500;
@@ -67,9 +63,11 @@
     border-bottom-color: currentColor;
     opacity: 1;
   }
-
 </style>
 
+<script>
+  export let segment;
+</script>
 
 <header class="header" role="banner">
   <h1 class="header__title title">
@@ -78,15 +76,24 @@
 
   <nav class="header__links-wrapper">
     <ul class="header__links links">
-      <li class="links__link-item"><a
-        class="{segment === 'about' ? 'links__link links__link--active' : 'links__link'}"
-        aria-current="{segment === 'about' ? 'page' : undefined}"
-        href="/about">About</a></li>
-      <li class="links__link-item"><a
-        class="{segment === 'contact' ? 'links__link links__link--active' : 'links__link'}"
-        aria-current="{segment === 'contact' ? 'page' : undefined}"
-        href="/contact">Contact</a></li>
+      <li class="links__link-item">
+        <a
+          class="{segment === 'about' ? 'links__link links__link--active' : 'links__link'}"
+          aria-current="{segment === 'about' ? 'page' : undefined}"
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li class="links__link-item">
+        <a
+          class="{segment === 'contact' ? 'links__link links__link--active' : 'links__link'}"
+          aria-current="{segment === 'contact' ? 'page' : undefined}"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
-
