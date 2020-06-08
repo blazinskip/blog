@@ -2,7 +2,7 @@
   "svelteSortOrder" : "styles-scripts-markup",
   "svelteStrictMode": true,
   "svelteBracketNewLine": true,
-  "svelteAllowShorthand": false,
+  "svelteAllowShorthand": true,
   "htmlWhitespaceSensitivity": "ignore",
   "singleQuote": true,
   "semi": true,
