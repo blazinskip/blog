@@ -1,5 +1,6 @@
 <style>
   .blog {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     max-width: 50rem;
@@ -7,7 +8,6 @@
   }
 
   main {
-    position: relative;
     max-width: 56em;
     background-color: white;
     padding: 2em;
