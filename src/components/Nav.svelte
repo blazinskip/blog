@@ -1,9 +1,15 @@
 <style>
   .header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
     align-items: center;
     justify-content: space-between;
     display: flex;
     height: 4rem;
+
+    background: #fff;
   }
 
   .header__title.title {
@@ -14,7 +20,6 @@
   .title__link {
     display: flex;
     height: 98%;
-    padding: 0 1rem;
     text-decoration: none;
     align-items: center;
   }
@@ -44,7 +49,7 @@
     align-items: center;
     display: flex;
 
-    border-bottom: 3px solid transparent;
+    border-bottom: 2px solid transparent;
     padding: 0 1rem;
     height: 100%;
 
@@ -56,6 +61,10 @@
     letter-spacing: 1px;
 
     text-decoration: none;
+  }
+
+  .links__link:first-of-type {
+    margin-right: 1rem;
   }
 
   .links__link.links__link--active,
@@ -85,6 +94,7 @@
           About
         </a>
       </li>
+
       <li class="links__link-item">
         <a
           class="{segment === 'contact' ? 'links__link links__link--active' : 'links__link'}"
