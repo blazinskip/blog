@@ -24,7 +24,6 @@
 </style>
 
 <script>
-  // import the list of posts
   import { posts } from '../posts';
 </script>
 
