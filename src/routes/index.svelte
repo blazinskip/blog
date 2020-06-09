@@ -38,6 +38,7 @@
     <!-- link article to /posts/$permalink -->
     <a href="{`/posts/${post.permalink}`}">
       <h2>{post.title}</h2>
+      <span>{post.readInformation.humanized}</span>
       <p>{post.summary}</p>
     </a>
   </article>
