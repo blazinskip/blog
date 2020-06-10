@@ -1,6 +1,7 @@
 ---
 title: Everything you wanted to know
 summary: A short post about ...
+published: true
 date: 2020-04-01
 ---
 

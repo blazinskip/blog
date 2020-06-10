@@ -1,7 +1,8 @@
 ---
 title: Second Post
 summary: A short post about ...
-date: 2020-03-01
+published: false
+date: null
 ---
 
 # Second Post
