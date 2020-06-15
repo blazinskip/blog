@@ -9,6 +9,12 @@ date: 2020-04-01
 - is
 - markdown
 
+   ```javascript
+  const java = 'Java';
+   console.log(java);
+```
+
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur consequatur deleniti labore laboriosam nemo provident, repellendus? Amet commodi, corporis dignissimos facere impedit minus necessitatibus nesciunt quo, repellendus, reprehenderit rerum?
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur consequatur deleniti labore laboriosam nemo provident, repellendus? Amet commodi, corporis dignissimos facere impedit minus necessitatibus nesciunt quo, repellendus, reprehenderit rerum?
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur consequatur deleniti labore laboriosam nemo provident, repellendus? Amet commodi, corporis dignissimos facere impedit minus necessitatibus nesciunt quo, repellendus, reprehenderit rerum?
