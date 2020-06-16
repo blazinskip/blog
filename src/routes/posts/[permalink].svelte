@@ -12,6 +12,12 @@
   }
 </script>
 
+<style>
+  .post__landing-icon {
+    width: 100%;
+  }
+</style>
+
 <script>
   // this prop is filled from the result of the `preload()`
   export let post;
@@ -21,4 +27,9 @@
   <title>{post.title}</title>
 </svelte:head>
 
-{@html post.html}
+
+<div class="post">
+  <img class="post__landing-icon" src="images/{post.permalink}/landing.jpg" alt="blog landing"/>
+    {@html post.html}
+</div>
+
