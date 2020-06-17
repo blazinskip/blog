@@ -16,6 +16,11 @@
   .post__landing-icon {
     width: 100%;
   }
+
+  .post__content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
 </style>
 
 <script>
@@ -30,6 +35,9 @@
 
 <div class="post">
   <img class="post__landing-icon" src="images/{post.permalink}/landing.jpg" alt="blog landing"/>
+  <div class="post__content">
+    <h2>{post.title}</h2>
     {@html post.html}
+  </div>
 </div>
 
