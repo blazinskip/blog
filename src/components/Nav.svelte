@@ -1,13 +1,20 @@
 <style>
-  .header {
+  .header-wrapper {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
 
+    background: #fff;
+  }
+
+  .header {
     align-items: center;
     justify-content: space-between;
     display: flex;
+
+    margin: 1rem auto;
     height: 4rem;
+    max-width: var(--max-width);
 
     background: #fff;
   }
@@ -78,32 +85,37 @@
   export let segment;
 </script>
 
-<header class="header" role="banner">
-  <h1 class="header__title title">
-    <a class="title__link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">💻 Patryk Blazinski</a>
-  </h1>
+<div class="header-wrapper">
+  <header class="header" role="banner">
+    <h1 class="header__title title">
+      <a class="title__link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">
+        💻 Patryk Blazinski
+      </a>
+    </h1>
 
-  <nav class="header__links-wrapper">
-    <ul class="header__links links">
-      <li class="links__link-item">
-        <a
-          class="{segment === 'about' ? 'links__link links__link--active' : 'links__link'}"
-          aria-current="{segment === 'about' ? 'page' : undefined}"
-          href="/about"
-        >
-          About
-        </a>
-      </li>
+    <nav class="header__links-wrapper">
+      <ul class="header__links links">
+        <li class="links__link-item">
+          <a
+            class="{segment === 'about' ? 'links__link links__link--active' : 'links__link'}"
+            aria-current="{segment === 'about' ? 'page' : undefined}"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
 
-      <li class="links__link-item">
-        <a
-          class="{segment === 'contact' ? 'links__link links__link--active' : 'links__link'}"
-          aria-current="{segment === 'contact' ? 'page' : undefined}"
-          href="/contact"
-        >
-          Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-</header>
+        <li class="links__link-item">
+          <a
+            class="{segment === 'contact' ? 'links__link links__link--active' : 'links__link'}"
+            aria-current="{segment === 'contact' ? 'page' : undefined}"
+            href="/contact"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+</div>
