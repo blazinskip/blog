@@ -6,6 +6,13 @@ export const posts = all
   .map(transform)
   .sort((a, b) => b.date - a.date);
 
+const allCategories = all
+  .filter(({ metadata }) => metadata.published)
+  .map(transform)
+  .reduce((acc, { categories }) => [...acc, ...categories], []);
+
+export const categories = Array.from(new Set(allCategories));
+
 function transform({ filename, html, metadata }) {
   // TODO: rename permalink to link
   const permalink = filename.replace(/\.md$/, '');
