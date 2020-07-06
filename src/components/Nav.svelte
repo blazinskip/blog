@@ -22,6 +22,7 @@
   .header__title.title {
     margin-bottom: 0;
     height: 98%;
+    font-size: 24px;
   }
 
   .title__link {
