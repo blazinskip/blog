@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   .wrapper {
     margin: 0 auto;
     width: var(--max-width);
@@ -12,6 +12,50 @@
   .paragraph {
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  .spacings {
+    & > * {
+      display: inline-block;
+      margin-right: var(--space-sm);
+      border-radius: 4px;
+      height: 50px;
+    }
+
+    .spacings__space-xxs {
+      width: var(--space-xxs);
+      background: #c05de8;
+    }
+
+    .spacings__space-xs {
+      width: var(--space-xs);
+      background: #c05de8;
+    }
+
+    .spacings__space-sm {
+      width: var(--space-sm);
+      background: #c05de8;
+    }
+
+    .spacings__space-md {
+      width: var(--space-md);
+      background: #c05de8;
+    }
+
+    .spacings__space-lg {
+      width: var(--space-lg);
+      background: #c05de8;
+    }
+
+    .spacings__space-xl {
+      width: var(--space-xl);
+      background: #c05de8;
+    }
+
+    .spacings__space-xxl {
+      width: var(--space-xxl);
+      background: #c05de8;
+    }
   }
 </style>
 
@@ -44,6 +88,16 @@
       advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no
       annoying consequences, or one who avoids a pain that produces no resultant pleasure?
     </p>
+
+    <div class="spacings">
+      <span class="spacings__space-xxs"></span>
+      <span class="spacings__space-xs"></span>
+      <span class="spacings__space-sm"></span>
+      <span class="spacings__space-md"></span>
+      <span class="spacings__space-lg"></span>
+      <span class="spacings__space-xl"></span>
+      <span class="spacings__space-xxl"></span>
+    </div>
   {:else}
     <p>Not Development</p>
   {/if}
