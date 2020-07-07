@@ -2,6 +2,13 @@ p {
   line-height: var(--paragraph-line-height);
 }
 
+body {
+  font-size: var(--text-md);
+  line-height: var(--body-line-height);
+  font-family: var(--font-family);
+  color: #333;
+}
+
 h1,
 h2,
 h3,
