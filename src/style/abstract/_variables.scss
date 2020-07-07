@@ -1,0 +1,39 @@
+:root {
+  --max-width: 1000px;
+  --page-y-spacing: 4.2rem;
+  --page-x-spacing: 2.1rem;
+
+  font-size: 18px;
+
+  --font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+
+  --body-line-height: 1.15;
+  --heading-line-height: 1.2;
+  --paragraph-line-height: 1.3;
+
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.3;
+
+  --text-xs: calc(1rem / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1rem / var(--text-scale-ratio));
+  --text-md: calc(1rem * var(--text-scale-ratio));
+  --text-lg: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(
+    1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)
+  );
+  --text-xxxl: calc(
+    1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+      var(--text-scale-ratio)
+  );
+
+  --space-unit: 1rem;
+  --space-xxs: calc(0.25 * var(--space-unit));
+  --space-xs: calc(0.5 * var(--space-unit));
+  --space-sm: calc(0.75 * var(--space-unit));
+  --space-md: calc(1.25 * var(--space-unit));
+  --space-lg: calc(2 * var(--space-unit));
+  --space-xl: calc(3.25 * var(--space-unit));
+  --space-xxl: calc(5.25 * var(--space-unit));
+}
