@@ -1,4 +1,6 @@
-<style>
+<style lang="scss" global>
+  @import './src/style/main';
+
   .blog {
     position: relative;
   }

@@ -1,0 +1,46 @@
+p {
+  line-height: var(--paragraph-line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+form legend {
+  font-weight: 500;
+  line-height: var(--heading-line-height);
+}
+
+/* text size */
+.text-xxxl {
+  font-size: var(--text-xxxl);
+}
+
+h1,
+.text-xxl {
+  font-size: var(--text-xxl);
+}
+
+h2,
+.text-xl {
+  font-size: var(--text-xl);
+}
+
+h3,
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+h4,
+.text-md {
+  font-size: var(--text-md);
+}
+
+.text-sm,
+small {
+  font-size: var(--text-sm);
+}
+
+.text-xs {
+  font-size: var(--text-xs);
+}
