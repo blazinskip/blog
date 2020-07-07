@@ -1,4 +1,4 @@
-<style>
+<style lang="scss">
   .header-wrapper {
     position: -webkit-sticky;
     position: sticky;
@@ -12,73 +12,54 @@
     justify-content: space-between;
     display: flex;
 
-    margin: 1rem auto;
-    height: 4rem;
+    margin: var(--space-lg) auto var(--space-xl) auto;
     max-width: var(--max-width);
+    padding: var(--space-md) 0;
 
-    background: #fff;
-  }
+    .header__title {
+      margin-bottom: 0;
+      font-size: var(--text-md);
+    }
 
-  .header__title.title {
-    margin-bottom: 0;
-    height: 98%;
-    font-size: 24px;
-  }
+    .header__links {
+      flex-direction: row;
+      display: flex;
+      margin: 0;
+      padding-left: 0;
+      height: 100%;
 
-  .title__link {
-    display: flex;
-    height: 98%;
-    text-decoration: none;
-    align-items: center;
-  }
+      list-style: none;
+    }
 
-  .header__links-wrapper {
-    height: 98%;
-  }
+    .header__links-item {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      height: 100%;
+    }
 
-  .header__links.links {
-    flex-direction: row;
-    display: flex;
-    margin: 0;
-    padding-left: 0;
-    height: 100%;
+    .header__links-link {
+      align-items: center;
+      display: flex;
 
-    list-style: none;
-  }
+      height: 100%;
+      padding: var(--space-md);
 
-  .links__link-item {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 100%;
-  }
+      transition: opacity 0.3s, border-bottom-color 0.3s;
+      opacity: 0.8;
 
-  .links__link {
-    align-items: center;
-    display: flex;
+      font-size: var(--text-md);
+      font-weight: 500;
 
-    border-bottom: 2px solid transparent;
-    padding: 0 1rem;
-    height: 100%;
+      &:first-of-type {
+        margin-right: var(--space-md);
+      }
 
-    transition: opacity 0.3s, border-bottom-color 0.3s;
-    opacity: 0.8;
-
-    font-size: 1.2rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-
-    text-decoration: none;
-  }
-
-  .links__link:first-of-type {
-    margin-right: 1rem;
-  }
-
-  .links__link.links__link--active,
-  .links__link:hover {
-    border-bottom-color: currentColor;
-    opacity: 1;
+      &--active,
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 </style>
 
@@ -88,17 +69,17 @@
 
 <div class="header-wrapper">
   <header class="header" role="banner">
-    <h1 class="header__title title">
-      <a class="title__link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">
-        💻 Patryk Blazinski
+    <h1 class="header__title">
+      <a class="header__title-link" aria-current="{segment === undefined ? 'page' : undefined}" href=".">
+        Patryk Blazinski
       </a>
     </h1>
 
-    <nav class="header__links-wrapper">
-      <ul class="header__links links">
-        <li class="links__link-item">
+    <nav>
+      <ul class="header__links">
+        <li class="header__links-item">
           <a
-            class="{segment === 'about' ? 'links__link links__link--active' : 'links__link'}"
+            class="{segment === 'about' ? 'header__links-link header__links-link--active' : 'header__links-link'}"
             aria-current="{segment === 'about' ? 'page' : undefined}"
             href="/about"
           >
@@ -106,9 +87,10 @@
           </a>
         </li>
 
-        <li class="links__link-item">
+        <li class="header__links-item">
           <a
-            class="{segment === 'contact' ? 'links__link links__link--active' : 'links__link'}"
+            style="margin-right: 0"
+            class="{segment === 'contact' ? 'header__links-link header__links-link--active' : 'header__links-link'}"
             aria-current="{segment === 'contact' ? 'page' : undefined}"
             href="/contact"
           >
