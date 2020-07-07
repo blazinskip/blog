@@ -21,6 +21,15 @@
     --text-xl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
     --text-xxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
     --text-xxxl: calc(1rem * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    --space-unit: 1rem;
+    --space-xxs: calc(0.25 * var(--space-unit));
+    --space-xs: calc(0.5 * var(--space-unit));
+    --space-sm: calc(0.75 * var(--space-unit));
+    --space-md: calc(1.25 * var(--space-unit));
+    --space-lg: calc(2 * var(--space-unit));
+    --space-xl: calc(3.25 * var(--space-unit));
+    --space-xxl: calc(5.25 * var(--space-unit));
 }
 
 * {
@@ -39,7 +48,6 @@ code {
     padding: 0.2em 0.4em;
     border-radius: 2px;
 }
-
 
 
 body {
