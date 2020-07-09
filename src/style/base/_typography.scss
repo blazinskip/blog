@@ -6,11 +6,20 @@ body {
   font-size: var(--text-md);
   line-height: var(--body-line-height);
   font-family: var(--font-family);
+  font-weight: 300;
   color: #333;
 }
 
 a {
   text-decoration: none;
+}
+
+code {
+  display: block;
+  width: 100%;
+  padding: var(--space-md);
+  font-size: var(--code-font-size);
+  background: antiquewhite;
 }
 
 h1,
