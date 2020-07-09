@@ -12,14 +12,17 @@
   }
 </script>
 
-<style>
-  .post__landing-icon {
-    width: 100%;
+<style lang="scss">
+  .post {
+    grid-gap: 3rem;
+    grid-template-columns: 3fr 1fr;
+    display: grid;
+    max-width: var(--max-width);
+    margin: 0 auto;
   }
 
   .post__content {
-    max-width: var(--max-width);
-    margin: 0 auto;
+
   }
 </style>
 
@@ -34,10 +37,11 @@
 
 
 <div class="post">
-  <img class="post__landing-icon" src="images/{post.permalink}/landing.jpg" alt="blog landing"/>
-  <div class="post__content">
+  <article class="post__content">
     <h2>{post.title}</h2>
     {@html post.html}
-  </div>
+  </article>
+
+  <aside>This is aside</aside>
 </div>
 
