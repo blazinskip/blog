@@ -39,9 +39,12 @@
 <div class="post">
   <article class="post__content">
     <h2>{post.title}</h2>
-    {@html post.html}
+      {@html post.html}
   </article>
 
-  <aside>This is aside</aside>
+  <aside>
+    <div>{post.date}</div>
+    <div>{post.readInformation.humanized}</div>
+  </aside>
 </div>
 
