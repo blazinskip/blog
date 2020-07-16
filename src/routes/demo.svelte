@@ -57,6 +57,10 @@
       background: #c05de8;
     }
   }
+
+  .tags {
+    margin-top: var(--space-lg);
+  }
 </style>
 
 <script>
@@ -97,6 +101,10 @@
       <span class="spacings__space-lg"></span>
       <span class="spacings__space-xl"></span>
       <span class="spacings__space-xxl"></span>
+    </div>
+
+    <div class="tags">
+      <a class="tag" href="/">Javascript</a>
     </div>
   {:else}
     <p>Not Development</p>
