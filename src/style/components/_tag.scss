@@ -1,0 +1,15 @@
+.tag {
+  border-radius: 4px;
+  padding: var(--space-xs) var(--space-xs);
+  background: #333;
+  font-size: var(--text-sm);
+  font-weight: bold;
+  letter-spacing: 0.03px;
+  color: white;
+
+  transition: background 0.2s ease-in-out;
+
+  &:hover {
+    background: rgba(#333, 0.75);
+  }
+}
